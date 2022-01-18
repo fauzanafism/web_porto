@@ -41,7 +41,7 @@ class HomeScreen extends StatelessWidget {
             children: <Widget>[
               Container(
                 margin: const EdgeInsets.symmetric(horizontal: 15),
-                height: 630,
+                height: 650,
                 child: ResponsiveRowColumn(
                   columnMainAxisAlignment: MainAxisAlignment.spaceAround,
                   rowMainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -139,9 +139,12 @@ class HomeScreen extends StatelessWidget {
               ),
               //Metrik App
               Container(
-                height: 650,
-                margin:
-                    const EdgeInsets.symmetric(horizontal: 10),
+                height: ResponsiveValue(context,
+                    defaultValue: 650.0,
+                    valueWhen: const [
+                      Condition.smallerThan(name: 'DESKTOP2', value: 850)
+                    ]).value,
+                margin: const EdgeInsets.symmetric(horizontal: 10),
                 child: ResponsiveRowColumn(
                   rowMainAxisAlignment: MainAxisAlignment.center,
                   layout:
@@ -198,9 +201,12 @@ class HomeScreen extends StatelessWidget {
               ),
               //Teco
               Container(
-                height: 650,
-                margin:
-                    const EdgeInsets.symmetric(horizontal: 10),
+                height: ResponsiveValue(context,
+                    defaultValue: 650.0,
+                    valueWhen: const [
+                      Condition.smallerThan(name: 'DESKTOP2', value: 850)
+                    ]).value,
+                margin: const EdgeInsets.symmetric(horizontal: 10),
                 child: ResponsiveRowColumn(
                   rowMainAxisAlignment: MainAxisAlignment.center,
                   layout:
@@ -271,4 +277,3 @@ class HomeScreen extends StatelessWidget {
         ));
   }
 }
-
