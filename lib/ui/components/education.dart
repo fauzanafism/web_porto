@@ -31,7 +31,7 @@ class Education extends StatelessWidget {
           ),
           ResponsiveRowColumn(
             rowMainAxisAlignment: MainAxisAlignment.center,
-            layout: ResponsiveWrapper.of(context).isSmallerThan(MOBILE)
+            layout: ResponsiveWrapper.of(context).isSmallerThan('MOBILE2')
                 ? ResponsiveRowColumnType.COLUMN
                 : ResponsiveRowColumnType.ROW,
             children: [
