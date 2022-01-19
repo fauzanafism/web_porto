@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_framework/responsive_framework.dart';
 import 'package:web_porto/ui/constant.dart';
 
 class Education extends StatelessWidget {
@@ -27,43 +28,52 @@ class Education extends StatelessWidget {
           const SizedBox(
             height: 35,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          ResponsiveRowColumn(
+            rowMainAxisAlignment: MainAxisAlignment.center,
+            layout: ResponsiveWrapper.of(context).isSmallerThan(TABLET)
+                ? ResponsiveRowColumnType.COLUMN
+                : ResponsiveRowColumnType.ROW,
             children: [
-              const SizedBox(
-                width: 30,
+              const ResponsiveRowColumnItem(
+                child: SizedBox(
+                  width: 30,
+                ),
               ),
-              SizedBox(height: 140, child: Image.asset('res/images/ipb.png')),
-              const SizedBox(width: 30),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  SelectableText(
-                    'IPB University',
-                    style: titleText.copyWith(color: Colors.lightBlue),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  SelectableText(
-                    'Applied Meteorology',
-                    style: titleText.copyWith(color: Colors.lightBlue),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  SelectableText(
-                    '2017 - 2021',
-                    style: titleText.copyWith(color: Colors.lightBlue),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  SelectableText(
-                    'GPA: 3.24',
-                    style: titleText.copyWith(color: Colors.lightBlue),
-                  ),
-                ],
+              ResponsiveRowColumnItem(
+                  child: SizedBox(
+                      height: 140, child: Image.asset('res/images/ipb.png'))),
+              const ResponsiveRowColumnItem(child: SizedBox(width: 30)),
+              ResponsiveRowColumnItem(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SelectableText(
+                      'IPB University',
+                      style: titleText.copyWith(color: Colors.lightBlue),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    SelectableText(
+                      'Applied Meteorology',
+                      style: titleText.copyWith(color: Colors.lightBlue),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    SelectableText(
+                      '2017 - 2021',
+                      style: titleText.copyWith(color: Colors.lightBlue),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    SelectableText(
+                      'GPA: 3.24',
+                      style: titleText.copyWith(color: Colors.lightBlue),
+                    ),
+                  ],
+                ),
               )
             ],
           )
