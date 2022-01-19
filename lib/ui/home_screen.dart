@@ -4,6 +4,7 @@ import 'package:web_porto/ui/constant.dart';
 import 'dart:html' as html;
 
 import 'components/contact.dart';
+import 'widgets/custom_button.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -71,25 +72,10 @@ class HomeScreen extends StatelessWidget {
                             style: bodyText.copyWith(color: Colors.white),
                           ),
                           const SizedBox(height: 15),
-                          MouseRegion(
-                            cursor: SystemMouseCursors.click,
-                            child: ElevatedButton(
-                              onPressed: () {
-                                html.window.open(
-                                    'https://drive.google.com/file/d/1AMeumJCZz1OWFU5LoEo0U4eoEXVCWCrR/view?usp=sharing',
-                                    "_blank");
-                              },
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(vertical: 10),
-                                child: Text(
-                                  'Download CV',
-                                  style: bodyText.copyWith(color: Colors.white),
-                                ),
-                              ),
-                              style: ElevatedButton.styleFrom(
-                                  primary: colorButton),
-                            ),
+                          const CustomButton(
+                            urlPath:
+                                'https://drive.google.com/file/d/1AMeumJCZz1OWFU5LoEo0U4eoEXVCWCrR/view?usp=sharing',
+                            text: 'Download CV',
                           )
                         ],
                       ),
