@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:web_porto/ui/components/app.dart';
 import 'package:web_porto/ui/constant.dart';
 import 'dart:html' as html;
 
@@ -124,129 +125,24 @@ class HomeScreen extends StatelessWidget {
                 height: 50,
               ),
               //Metrik App
-              Container(
-                height: ResponsiveValue(context,
-                    defaultValue: 650.0,
-                    valueWhen: const [
-                      Condition.smallerThan(name: 'DESKTOP2', value: 850)
-                    ]).value,
-                margin: const EdgeInsets.symmetric(horizontal: 10),
-                child: ResponsiveRowColumn(
-                  rowMainAxisAlignment: MainAxisAlignment.center,
-                  layout:
-                      ResponsiveWrapper.of(context).isSmallerThan('DESKTOP2')
-                          ? ResponsiveRowColumnType.COLUMN
-                          : ResponsiveRowColumnType.ROW,
-                  children: [
-                    ResponsiveRowColumnItem(
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
-                        child: const SizedBox(
-                          width: 599,
-                          child: Image(
-                            fit: BoxFit.cover,
-                            image: AssetImage('res/images/metapp.png'),
-                          ),
-                        ),
-                      ),
-                    ),
-                    const ResponsiveRowColumnItem(
-                      child: SizedBox(
-                        width: 30,
-                        height: 30,
-                      ),
-                    ),
-                    ResponsiveRowColumnItem(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SelectableText(
-                            'ANDROID APP',
-                            style: titleText.copyWith(color: Colors.grey),
-                          ),
-                          const SizedBox(height: 15),
-                          SelectableText(
-                            'METRIK 2019',
-                            style: headText,
-                          ),
-                          const SizedBox(height: 15),
-                          SelectableText(
-                            'An Android app for Meteorologi Interaktif 2019 competition',
-                            style: bodyText.copyWith(color: Colors.white),
-                          ),
-                          const SizedBox(height: 15),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              const AppSection(
+                  imageFirst: true,
+                  imagePath: 'res/images/metapp.png',
+                  platformName: 'ANDROID APP',
+                  appName: 'METRIK 2019',
+                  description:
+                      'An Android app for Meteorologi Interaktif 2019 competition'),
               const SizedBox(
                 height: 50,
               ),
               //Teco
-              Container(
-                height: ResponsiveValue(context,
-                    defaultValue: 650.0,
-                    valueWhen: const [
-                      Condition.smallerThan(name: 'DESKTOP2', value: 850)
-                    ]).value,
-                margin: const EdgeInsets.symmetric(horizontal: 10),
-                child: ResponsiveRowColumn(
-                  rowMainAxisAlignment: MainAxisAlignment.center,
-                  layout:
-                      ResponsiveWrapper.of(context).isSmallerThan('DESKTOP2')
-                          ? ResponsiveRowColumnType.COLUMN
-                          : ResponsiveRowColumnType.ROW,
-                  children: [
-                    ResponsiveRowColumnItem(
-                      rowOrder: 3,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
-                        child: const SizedBox(
-                          width: 599,
-                          child: Image(
-                            fit: BoxFit.cover,
-                            image: AssetImage('res/images/teco.png'),
-                          ),
-                        ),
-                      ),
-                    ),
-                    const ResponsiveRowColumnItem(
-                      rowOrder: 2,
-                      child: SizedBox(
-                        width: 30,
-                        height: 30,
-                      ),
-                    ),
-                    ResponsiveRowColumnItem(
-                      rowOrder: 1,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SelectableText(
-                            'DESKTOP APP',
-                            style: titleText.copyWith(color: Colors.grey),
-                          ),
-                          const SizedBox(height: 15),
-                          SelectableText(
-                            'TECO\nTEmperature Based\nCOrn Yield Prediction',
-                            style: headText,
-                          ),
-                          const SizedBox(height: 15),
-                          SelectableText(
-                            'A desktop app for estimating corn production based\non meteorological variable such as temperature',
-                            style: bodyText.copyWith(color: Colors.white),
-                          ),
-                          const SizedBox(height: 15),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              const AppSection(
+                  imageFirst: false,
+                  imagePath: 'res/images/teco.png',
+                  platformName: 'DESKTOP APP',
+                  appName: 'TECO',
+                  description:
+                      'A desktop app for estimating corn production based\non meteorological variable such as temperature'),
               //Education
               //Contact
               const Contact(),
