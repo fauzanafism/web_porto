@@ -45,6 +45,10 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(
                 height: 50,
               ),
+              SelectableText('PROJECTS', style: headText,),
+              const SizedBox(
+                height: 50,
+              ),
               //Metrik App
               const AppSection(
                 imageFirst: true,
