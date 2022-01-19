@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:web_porto/ui/components/app.dart';
 import 'package:web_porto/ui/components/education.dart';
+import 'package:web_porto/ui/components/skill.dart';
 import 'package:web_porto/ui/constant.dart';
 import 'dart:html' as html;
 
@@ -73,6 +74,8 @@ class HomeScreen extends StatelessWidget {
                       'A desktop app for estimating corn production \nbased on meteorological variable such as \ntemperature'),
               //Education
               const Education(),
+              //Skill
+              const Skills(),
               //Contact
               const Contact(),
               //Footer
