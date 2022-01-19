@@ -3,14 +3,14 @@ import 'package:responsive_framework/responsive_framework.dart';
 
 import '../constant.dart';
 
-class AppRight extends StatelessWidget {
+class AppSection extends StatelessWidget {
   final bool imageFirst;
   final String imagePath;
   final String platformName;
   final String appName;
   final String description;
 
-  const AppRight({
+  const AppSection({
     Key? key,
     required this.imageFirst,
     required this.imagePath,
@@ -36,40 +36,40 @@ class AppRight extends StatelessWidget {
                 : ResponsiveRowColumnType.ROW,
         children: [
           ResponsiveRowColumnItem(
+            rowOrder: imageFirst ? 1 : 3,
             child: ClipRRect(
               borderRadius: BorderRadius.circular(20),
-              child: const SizedBox(
+              child: SizedBox(
                 width: 599,
-                child: Image(
-                  fit: BoxFit.cover,
-                  image: AssetImage('res/images/metapp.png'),
-                ),
+                child: Image.asset(imagePath, fit: BoxFit.cover,),
               ),
             ),
           ),
           const ResponsiveRowColumnItem(
+            rowOrder: 2,
             child: SizedBox(
               width: 30,
               height: 30,
             ),
           ),
           ResponsiveRowColumnItem(
+            rowOrder: imageFirst ? 3 : 1,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SelectableText(
-                  'ANDROID APP',
+                  platformName,
                   style: titleText.copyWith(color: Colors.grey),
                 ),
                 const SizedBox(height: 15),
                 SelectableText(
-                  'METRIK 2019',
+                  appName,
                   style: headText,
                 ),
                 const SizedBox(height: 15),
                 SelectableText(
-                  'An Android app for Meteorologi Interaktif 2019 competition',
+                  description,
                   style: bodyText.copyWith(color: Colors.white),
                 ),
                 const SizedBox(height: 15),
