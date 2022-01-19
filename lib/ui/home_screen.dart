@@ -46,13 +46,14 @@ class HomeScreen extends StatelessWidget {
               ),
               //Metrik App
               const AppSection(
-                  imageFirst: true,
-                  imagePath: 'res/images/metapp.png',
-                  platformName: 'ANDROID APP',
-                  appName: 'METRIK 2019',
-                  gitUrl: 'https://github.com/fauzanafism/metrik2019_flutter',
-                  description:
-                      'An Android app for Meteorologi Interaktif 2019 competition',),
+                imageFirst: true,
+                imagePath: 'res/images/metapp.png',
+                platformName: 'ANDROID APP',
+                appName: 'METRIK 2019',
+                gitUrl: 'https://github.com/fauzanafism/metrik2019_flutter',
+                description:
+                    'An Android app for Meteorologi Interaktif 2019\ncompetition',
+              ),
               const SizedBox(
                 height: 50,
               ),
@@ -64,7 +65,7 @@ class HomeScreen extends StatelessWidget {
                   gitUrl: 'https://github.com/fauzanafism/TECOs',
                   appName: 'TECO',
                   description:
-                      'A desktop app for estimating corn production based\non meteorological variable such as temperature'),
+                      'A desktop app for estimating corn production \nbased on meteorological variable such as \ntemperature'),
               //Education
               //Contact
               const Contact(),
@@ -81,4 +82,3 @@ class HomeScreen extends StatelessWidget {
         ));
   }
 }
-
