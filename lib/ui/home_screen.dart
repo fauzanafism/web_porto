@@ -74,8 +74,10 @@ class HomeScreen extends StatelessWidget {
                       'A desktop app for estimating corn production \nbased on meteorological variable such as \ntemperature'),
               //Education
               const Education(),
+              const SizedBox(height: 50),
               //Skill
               const Skills(),
+              const SizedBox(height: 50),
               //Contact
               const Contact(),
               //Footer

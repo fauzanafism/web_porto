@@ -9,10 +9,11 @@ class Education extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 10),
-      height: 400,
+      height: 450,
       // width: 1020,
       // color: Colors.red.withOpacity(0.1),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SelectableText(
             'EDUCATION',
@@ -30,7 +31,7 @@ class Education extends StatelessWidget {
           ),
           ResponsiveRowColumn(
             rowMainAxisAlignment: MainAxisAlignment.center,
-            layout: ResponsiveWrapper.of(context).isSmallerThan(TABLET)
+            layout: ResponsiveWrapper.of(context).isSmallerThan(MOBILE)
                 ? ResponsiveRowColumnType.COLUMN
                 : ResponsiveRowColumnType.ROW,
             children: [
@@ -42,7 +43,7 @@ class Education extends StatelessWidget {
               ResponsiveRowColumnItem(
                   child: SizedBox(
                       height: 140, child: Image.asset('res/images/ipb.png'))),
-              const ResponsiveRowColumnItem(child: SizedBox(width: 30)),
+              const ResponsiveRowColumnItem(child: SizedBox(width: 30, height: 14,)),
               ResponsiveRowColumnItem(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

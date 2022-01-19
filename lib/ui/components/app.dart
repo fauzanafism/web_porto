@@ -28,7 +28,7 @@ class AppSection extends StatelessWidget {
       height: ResponsiveValue(context,
           defaultValue: 650.0,
           valueWhen: const [
-            Condition.smallerThan(name: 'DESKTOP2', value: 850)
+            Condition.smallerThan(name: 'DESKTOP2', value: 810)
           ]).value,
       margin: const EdgeInsets.symmetric(horizontal: 10),
       child: ResponsiveRowColumn(
