@@ -8,7 +8,7 @@ class Education extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 10),
-      height: 350,
+      height: 400,
       // width: 1020,
       // color: Colors.red.withOpacity(0.1),
       child: Column(
@@ -40,28 +40,28 @@ class Education extends StatelessWidget {
                 children: [
                   SelectableText(
                     'IPB University',
-                    style: titleText,
+                    style: titleText.copyWith(color: Colors.lightBlue),
                   ),
                   const SizedBox(
                     height: 10,
                   ),
                   SelectableText(
                     'Applied Meteorology',
-                    style: titleText,
+                    style: titleText.copyWith(color: Colors.lightBlue),
                   ),
                   const SizedBox(
                     height: 10,
                   ),
                   SelectableText(
                     '2017 - 2021',
-                    style: titleText,
+                    style: titleText.copyWith(color: Colors.lightBlue),
                   ),
                   const SizedBox(
                     height: 10,
                   ),
                   SelectableText(
                     'GPA: 3.24',
-                    style: titleText,
+                    style: titleText.copyWith(color: Colors.lightBlue),
                   ),
                 ],
               )
