@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
         ClampingScrollWrapper.builder(context, widget!),
         breakpoints: const [
           ResponsiveBreakpoint.resize(350, name: MOBILE),
+          ResponsiveBreakpoint.resize(450, name: 'MOBILE2'),
           ResponsiveBreakpoint.autoScale(600, name: TABLET),
           ResponsiveBreakpoint.resize(800, name: DESKTOP),
           ResponsiveBreakpoint.resize(1130, name: 'DESKTOP2'),
