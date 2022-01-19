@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:web_porto/ui/widgets/custom_button.dart';
 
 import '../constant.dart';
 
@@ -9,6 +10,7 @@ class AppSection extends StatelessWidget {
   final String platformName;
   final String appName;
   final String description;
+  final String gitUrl;
 
   const AppSection({
     Key? key,
@@ -16,7 +18,8 @@ class AppSection extends StatelessWidget {
     required this.imagePath,
     required this.platformName,
     required this.appName,
-    required this.description
+    required this.description,
+    required this.gitUrl
   }) : super(key: key);
 
   @override
@@ -73,6 +76,7 @@ class AppSection extends StatelessWidget {
                   style: bodyText.copyWith(color: Colors.white),
                 ),
                 const SizedBox(height: 15),
+                CustomButton(text: 'EXPLORE MORE', urlPath: gitUrl)
               ],
             ),
           ),

@@ -50,8 +50,9 @@ class HomeScreen extends StatelessWidget {
                   imagePath: 'res/images/metapp.png',
                   platformName: 'ANDROID APP',
                   appName: 'METRIK 2019',
+                  gitUrl: 'https://github.com/fauzanafism/metrik2019_flutter',
                   description:
-                      'An Android app for Meteorologi Interaktif 2019 competition'),
+                      'An Android app for Meteorologi Interaktif 2019 competition',),
               const SizedBox(
                 height: 50,
               ),
@@ -60,6 +61,7 @@ class HomeScreen extends StatelessWidget {
                   imageFirst: false,
                   imagePath: 'res/images/teco.png',
                   platformName: 'DESKTOP APP',
+                  gitUrl: 'https://github.com/fauzanafism/TECOs',
                   appName: 'TECO',
                   description:
                       'A desktop app for estimating corn production based\non meteorological variable such as temperature'),
