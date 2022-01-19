@@ -43,7 +43,11 @@ class Education extends StatelessWidget {
               ResponsiveRowColumnItem(
                   child: SizedBox(
                       height: 140, child: Image.asset('res/images/ipb.png'))),
-              const ResponsiveRowColumnItem(child: SizedBox(width: 30, height: 14,)),
+              const ResponsiveRowColumnItem(
+                  child: SizedBox(
+                width: 30,
+                height: 14,
+              )),
               ResponsiveRowColumnItem(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
