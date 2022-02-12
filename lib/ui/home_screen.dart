@@ -76,16 +76,17 @@ class HomeScreen extends StatelessWidget {
               const Education(),
               const SizedBox(height: 50),
               //Skill
-              const Skills(),
-              const SizedBox(height: 50),
+              // const Skills(),
+              // const SizedBox(height: 50),
               //Contact
               const Contact(),
               //Footer
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "Copyright (c) 2021 Fauzan Nafis Muharam. All rights Reserved",
+                  "Situs ini dibangun menggunakan Flutter\n\nCopyright (c) 2021 Fauzan Nafis Muharam. All rights Reserved",
                   style: bodyText,
+                  textAlign: TextAlign.center,
                 ),
               )
             ],
