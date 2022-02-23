@@ -1,4 +1,4 @@
 # Web Portfolio
 
-Simple portfolio website built by Flutter.
+Simple portfolio website using Flutter.
 
