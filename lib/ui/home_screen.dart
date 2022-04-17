@@ -58,7 +58,7 @@ class HomeScreen extends StatelessWidget {
                 appName: 'METRIK 2019',
                 gitUrl: 'https://github.com/fauzanafism/metrik2019_flutter',
                 description:
-                    'An Android app for Meteorologi Interaktif 2019\ncompetition',
+                    'An Android app for Meteorologi Interaktif 2019\nnational competition',
               ),
               const SizedBox(
                 height: 50,

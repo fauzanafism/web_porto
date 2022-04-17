@@ -29,7 +29,7 @@ class MyProfile extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SelectableText(
-                  'FRESH GRADUATE',
+                  'GIS OPERATOR',
                   style: titleText.copyWith(color: Colors.grey),
                 ),
                 const SizedBox(height: 15),
@@ -39,7 +39,7 @@ class MyProfile extends StatelessWidget {
                 ),
                 const SizedBox(height: 15),
                 SelectableText(
-                  'Fresh graduate of IPB University, based in Bogor',
+                  'GIS Operator at Forest Watch Indonesia, based in Bogor',
                   style: bodyText.copyWith(color: Colors.white),
                 ),
                 const SizedBox(height: 15),
