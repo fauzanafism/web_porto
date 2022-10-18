@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:web_porto/ui/components/app.dart';
 import 'package:web_porto/ui/components/education.dart';
-import 'package:web_porto/ui/components/skill.dart';
 import 'package:web_porto/ui/constant.dart';
 import 'dart:html' as html;
 
@@ -46,7 +45,10 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(
                 height: 50,
               ),
-              SelectableText('PROJECTS', style: headText,),
+              SelectableText(
+                'PROJECTS',
+                style: headText,
+              ),
               const SizedBox(
                 height: 50,
               ),
@@ -72,6 +74,15 @@ class HomeScreen extends StatelessWidget {
                   appName: 'TECO',
                   description:
                       'A desktop app for estimating corn production \nbased on meteorological variable such as \ntemperature'),
+              const SizedBox(height: 50),
+              const AppSection(
+                  imageFirst: true,
+                  imagePath: 'res/images/metrik22.png',
+                  platformName: 'WEBSITE',
+                  appName: 'METRIK 2022',
+                  description: 'A website built using Flutter Web for\nMeteorologi Interaktif 2022 national competition.',
+                  gitUrl: 'https://metrik-gfm.web.app'),
+              const SizedBox(height: 50),
               //Education
               const Education(),
               const SizedBox(height: 50),
