@@ -31,7 +31,7 @@ class CustomButton extends StatelessWidget {
           ),
         ),
         style: ElevatedButton.styleFrom(
-            primary: colorButton),
+            backgroundColor: colorButton),
       ),
     );
   }
