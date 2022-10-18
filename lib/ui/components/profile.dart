@@ -29,20 +29,20 @@ class MyProfile extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SelectableText(
-                  'GIS OPERATOR',
+                  'FLUTTER ENTHUSIAST',
                   style: titleText.copyWith(color: Colors.grey),
                 ),
-                const SizedBox(height: 15),
+                const SizedBox(height: 8),
                 SelectableText(
                   'FAUZAN NAFIS\nMUHARAM',
                   style: headText,
                 ),
                 const SizedBox(height: 15),
-                SelectableText(
-                  'GIS Operator at Forest Watch Indonesia, based in Bogor',
-                  style: bodyText.copyWith(color: Colors.white),
-                ),
-                const SizedBox(height: 15),
+                // SelectableText(
+                //   'GIS Operator at Forest Watch Indonesia, based in Bogor',
+                //   style: bodyText.copyWith(color: Colors.white),
+                // ),
+                // const SizedBox(height: 15),
                 const CustomButton(
                   urlPath:
                       'https://drive.google.com/file/d/1AMeumJCZz1OWFU5LoEo0U4eoEXVCWCrR/view?usp=sharing',
