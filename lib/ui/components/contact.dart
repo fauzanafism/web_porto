@@ -30,7 +30,7 @@ class Contact extends StatelessWidget {
           ContactItem(
               iconPath: 'res/images/email.png',
               title: 'EMAIL',
-              text1: 'fauzan137@gmail.com'),
+              text1: 'fauzanafism@gmail.com'),
         ],
       ),
     );
