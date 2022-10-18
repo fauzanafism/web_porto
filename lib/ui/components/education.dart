@@ -23,7 +23,7 @@ class Education extends StatelessWidget {
             height: 15,
           ),
           SelectableText(
-            'A fresh graduate of Applied Meteorology with expertise in reading, analyzing, and processing data.',
+            'A graduate of Applied Meteorology with expertise in reading, analyzing, and processing data.',
             style: bodyText,
           ),
           const SizedBox(
