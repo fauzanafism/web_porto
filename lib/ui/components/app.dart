@@ -11,7 +11,7 @@ class AppSection extends StatelessWidget {
   final String platformName;
   final String appName;
   final String description;
-  final String gitUrl;
+  final String url;
   final bool isPlayStore;
 
   const AppSection(
@@ -21,7 +21,7 @@ class AppSection extends StatelessWidget {
       required this.platformName,
       required this.appName,
       required this.description,
-      required this.gitUrl,
+      required this.url,
       this.isPlayStore = false})
       : super(key: key);
 
@@ -84,11 +84,11 @@ class AppSection extends StatelessWidget {
                         child: GestureDetector(
                           child: Image.asset('res/images/playbadge.png'),
                           onTap: () {
-                            html.window.open(gitUrl, "_blank");
+                            html.window.open(url, "_blank");
                           },
                         ),
                       )
-                    : CustomButton(text: 'EXPLORE MORE', urlPath: gitUrl)
+                    : CustomButton(text: 'EXPLORE MORE', urlPath: url)
               ],
             ),
           ),
