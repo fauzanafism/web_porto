@@ -88,7 +88,7 @@ class HomeScreen extends StatelessWidget {
                 height: 50,
               ),
               const AppSection(
-                  imageFirst: true,
+                  imageFirst: false,
                   imagePath: 'res/images/metrik22.png',
                   platformName: 'WEBSITE',
                   appName: 'METRIK 2022',
