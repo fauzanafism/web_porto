@@ -78,6 +78,7 @@ class HomeScreen extends StatelessWidget {
               const AppSection(
                   appName: 'GENERAL: DIGITAL WATCHFACE',
                   platformName: 'WATCHFACE',
+                  isPlayStore: true,
                   imageFirst: true,
                   url:
                       'https://play.google.com/store/apps/details?id=com.executivedesign.general',
