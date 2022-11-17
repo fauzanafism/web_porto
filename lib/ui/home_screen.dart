@@ -76,11 +76,23 @@ class HomeScreen extends StatelessWidget {
                       'A desktop app for estimating corn production \nbased on meteorological variable such as \ntemperature'),
               const SizedBox(height: 50),
               const AppSection(
+                  appName: 'GENERAL: DIGITAL WATCHFACE',
+                  platformName: 'WATCHFACE',
+                  imageFirst: true,
+                  gitUrl:
+                      'https://play.google.com/store/apps/details?id=com.executivedesign.general',
+                  description: 'Digital Watchface for WearOS smartwatches',
+                  imagePath: 'res/images/watchface.png'),
+              const SizedBox(
+                height: 50,
+              ),
+              const AppSection(
                   imageFirst: true,
                   imagePath: 'res/images/metrik22.png',
                   platformName: 'WEBSITE',
                   appName: 'METRIK 2022',
-                  description: 'A website built using Flutter Web for\nMeteorologi Interaktif 2022 national competition.',
+                  description:
+                      'A website built using Flutter Web for\nMeteorologi Interaktif 2022 national competition.',
                   gitUrl: 'https://metrik-gfm.web.app'),
               const SizedBox(height: 50),
               //Education
