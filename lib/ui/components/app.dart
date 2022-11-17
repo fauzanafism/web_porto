@@ -82,7 +82,10 @@ class AppSection extends StatelessWidget {
                 (isPlayStore)
                     ? MouseRegion(
                         child: GestureDetector(
-                          child: Image.asset('res/images/playbadge.png'),
+                          child: Image.asset(
+                            'res/images/playbadge.png',
+                            width: 200,
+                          ),
                           onTap: () {
                             html.window.open(url, "_blank");
                           },
