@@ -81,6 +81,7 @@ class AppSection extends StatelessWidget {
                 const SizedBox(height: 15),
                 (isPlayStore)
                     ? MouseRegion(
+                        cursor: SystemMouseCursors.click,
                         child: GestureDetector(
                           child: Image.asset(
                             'res/images/playbadge.png',
