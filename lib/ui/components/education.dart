@@ -54,28 +54,28 @@ class Education extends StatelessWidget {
                   children: [
                     SelectableText(
                       'IPB University',
-                      style: titleText.copyWith(color: Colors.lightBlue),
+                      style: titleText.copyWith(color: Colors.white60),
                     ),
                     const SizedBox(
                       height: 10,
                     ),
                     SelectableText(
                       'Applied Meteorology',
-                      style: titleText.copyWith(color: Colors.lightBlue),
+                      style: titleText.copyWith(color: Colors.white60),
                     ),
                     const SizedBox(
                       height: 10,
                     ),
                     SelectableText(
                       '2017 - 2021',
-                      style: titleText.copyWith(color: Colors.lightBlue),
+                      style: titleText.copyWith(color: Colors.white60),
                     ),
                     const SizedBox(
                       height: 10,
                     ),
                     SelectableText(
                       'GPA: 3.24',
-                      style: titleText.copyWith(color: Colors.lightBlue),
+                      style: titleText.copyWith(color: Colors.white60),
                     ),
                   ],
                 ),

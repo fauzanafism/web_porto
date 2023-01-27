@@ -58,7 +58,7 @@ class HomeScreen extends StatelessWidget {
                 imagePath: 'res/images/metapp.png',
                 platformName: 'ANDROID APP',
                 appName: 'METRIK 2019',
-                gitUrl: 'https://github.com/fauzanafism/metrik2019_flutter',
+                url: 'https://github.com/fauzanafism/metrik2019_flutter',
                 description:
                     'An Android app for Meteorologi Interaktif 2019\nnational competition',
               ),
@@ -70,18 +70,31 @@ class HomeScreen extends StatelessWidget {
                   imageFirst: false,
                   imagePath: 'res/images/teco.png',
                   platformName: 'DESKTOP APP',
-                  gitUrl: 'https://github.com/fauzanafism/TECOs',
+                  url: 'https://github.com/fauzanafism/TECOs',
                   appName: 'TECO',
                   description:
                       'A desktop app for estimating corn production \nbased on meteorological variable such as \ntemperature'),
               const SizedBox(height: 50),
               const AppSection(
+                  appName: 'GENERAL: DIGITAL WATCHFACE',
+                  platformName: 'WATCHFACE',
+                  isPlayStore: true,
                   imageFirst: true,
+                  url:
+                      'https://play.google.com/store/apps/details?id=com.executivedesign.general',
+                  description: 'Digital Watchface for WearOS smartwatches',
+                  imagePath: 'res/images/watchface.png'),
+              const SizedBox(
+                height: 50,
+              ),
+              const AppSection(
+                  imageFirst: false,
                   imagePath: 'res/images/metrik22.png',
                   platformName: 'WEBSITE',
                   appName: 'METRIK 2022',
-                  description: 'A website built using Flutter Web for\nMeteorologi Interaktif 2022 national competition.',
-                  gitUrl: 'https://metrik-gfm.web.app'),
+                  description:
+                      'A website built using Flutter Web for\nMeteorologi Interaktif 2022 national competition.',
+                  url: 'https://metrik-gfm.web.app'),
               const SizedBox(height: 50),
               //Education
               const Education(),
