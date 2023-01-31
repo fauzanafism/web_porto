@@ -45,7 +45,7 @@ class MyProfile extends StatelessWidget {
                 // const SizedBox(height: 15),
                 const CustomButton(
                   urlPath:
-                      'https://drive.google.com/file/d/1AMeumJCZz1OWFU5LoEo0U4eoEXVCWCrR/view?usp=sharing',
+                      'https://drive.google.com/file/d/14BqqzKLNtqiEkABCJY3QwXbKac5Fqpu0/view?usp=sharing',
                   text: 'Download CV',
                 )
               ],
