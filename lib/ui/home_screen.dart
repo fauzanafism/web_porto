@@ -62,12 +62,21 @@ class HomeScreen extends StatelessWidget {
                 description:
                     'An Android app for Meteorologi Interaktif 2019\nnational competition',
               ),
-              const SizedBox(
-                height: 50,
+              const SizedBox(height: 50),
+              // SIREKABG
+              const AppSection(
+                imageFirst: false,
+                imagePath: 'res/images/sirekabg3.png',
+                platformName: 'ANDROID APP',
+                appName: 'SIREKAB & SIPBG',
+                url: '',
+                description:
+                    'An Android app for inputing survey data for\nDinas Perumahan Kawasan Permukiman dan\nPertanahan Kabupaten Bogor',
               ),
+              const SizedBox(height: 50),
               //Teco
               const AppSection(
-                  imageFirst: false,
+                  imageFirst: true,
                   imagePath: 'res/images/teco.png',
                   platformName: 'DESKTOP APP',
                   url: 'https://github.com/fauzanafism/TECOs',
@@ -79,7 +88,7 @@ class HomeScreen extends StatelessWidget {
                   appName: 'GENERAL: DIGITAL WATCHFACE',
                   platformName: 'WATCHFACE',
                   isPlayStore: true,
-                  imageFirst: true,
+                  imageFirst: false,
                   url:
                       'https://play.google.com/store/apps/details?id=com.executivedesign.general',
                   description: 'Digital Watchface for WearOS smartwatches',
@@ -88,7 +97,7 @@ class HomeScreen extends StatelessWidget {
                 height: 50,
               ),
               const AppSection(
-                  imageFirst: false,
+                  imageFirst: true,
                   imagePath: 'res/images/metrik22.png',
                   platformName: 'WEBSITE',
                   appName: 'METRIK 2022',
