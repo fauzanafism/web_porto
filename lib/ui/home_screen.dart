@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:web_porto/ui/components/app.dart';
 import 'package:web_porto/ui/components/education.dart';
+import 'package:web_porto/ui/components/gallery.dart';
 import 'package:web_porto/ui/constant.dart';
 import 'dart:html' as html;
 
@@ -105,6 +106,9 @@ class HomeScreen extends StatelessWidget {
                       'A website built using Flutter Web for\nMeteorologi Interaktif 2022 national competition.',
                   url: 'https://metrik-gfm.web.app'),
               const SizedBox(height: 50),
+              // Gallery
+              Gallery(),
+              const SizedBox(height: 50),
               //Education
               const Education(),
               const SizedBox(height: 50),
@@ -117,7 +121,7 @@ class HomeScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "Situs ini dibangun menggunakan Flutter\n\nCopyright (c) 2021 Fauzan Nafis Muharam. All rights Reserved",
+                  "This site also built using Flutter Web\n\nCopyright (c) 2021 Fauzan Nafis Muharam. All rights Reserved",
                   style: bodyText,
                   textAlign: TextAlign.center,
                 ),
